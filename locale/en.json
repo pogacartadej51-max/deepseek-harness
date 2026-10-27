@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Archive Cleanup",
+    "description": "List and permanently delete the on-disk data of archived sessions (no trash folder)."
+  }
+}

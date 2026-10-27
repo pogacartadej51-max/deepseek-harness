@@ -1,0 +1,51 @@
+{
+  "name": "dsh-archive-cleanup",
+  "version": "0.3.0",
+  "private": true,
+  "description": "DeepSeek Harness 插件：列出并物理删除已归档会话的磁盘数据（没有回收目录），同时提供浮动面板与 archive_cleanup 工具",
+  "type": "module",
+  "license": "MIT",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pogacartadej51-max/deepseek-harness.git"
+  },
+  "homepage": "https://github.com/pogacartadej51-max/deepseek-harness#readme",
+  "bugs": {
+    "url": "https://github.com/pogacartadej51-max/deepseek-harness/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "archive",
+    "cleanup",
+    "session"
+  ],
+  "engines": {
+    "node": ">=22.15"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs && node test/api.mjs && node test/ui.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -7,6 +7,14 @@ DSH 的「归档」只是把 session id 写进 `$DSH_HOME/storages/workspace.jso
 和投影缓存（`$DSH_HOME/storages/session_projcache/sessions/<id>.json`）原封不动留在磁盘上。
 侧边栏看不见，不等于删掉了。这个插件补上「归档之后」那一步。
 
+## 截图
+
+| 右下角入口 | 面板（勾选后删除） |
+|---|---|
+| <img src="docs/images/entry-button.png" width="420" alt="右下角的「清理归档」胶囊按钮"> | <img src="docs/images/panel-open.png" width="420" alt="归档清理面板，选中一条会话后显示「删除所选 (1)」"> |
+
+面板是右下角的浮动卡片，不铺全屏遮罩；上面这张是选中 `Greeting` 这一条待删会话时的样子。
+
 ## 两种用法
 
 ### 1. 应用内浮动面板
